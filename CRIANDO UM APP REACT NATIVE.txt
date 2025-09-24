@@ -1,0 +1,36 @@
+
+
+
+		CRIANDO UM APP REACT NATIVE
+
+
+npx create-expo-app@latest --template - # CRIANDO UM NOVO PROJETO 
+
+(escolha o modelo blank para javascript, pois o padrão é typescript)
+
+
+npx expo start - # RODANDO A APOICACAO - 
+
+# ESCANEI O CODICO QR E ABRA NO CELL OU APERTE A TECLA 'A' E ABRA NO EMULADOR
+
+===============================================================================
+
+	PARA CRIAR UM APP COM NAVEGACOES, PRECISA INSTALAR ISSO DENTRO DO APP
+
+
+# npm install @react-navigation/native
+
+# npx expo install react-native-screens react-native-safe-area-context
+
+	
+	DEPOIS INSTALE QUAL TIPO DE NAVEGACAO VAI QUERER
+
+# Bottom Tabs
+npm install @react-navigation/bottom-tabs
+
+
+# Material Top Tabs
+npm install @react-navigation/material-top-tabs
+
+
+#
