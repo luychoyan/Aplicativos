@@ -4,10 +4,26 @@ import { estilos } from "./style";
 import { useState } from "react";
 import { FlatList } from "react-native";
 import { listaTarefas } from "../ListaTarefas";
+import { ListaTarefas } from "./components/ListaTarefas";
 
 export default function Index() {
 
     const [textoInput, setTextoInput] = useState("");
+
+    const [minhasTarefas, setMinhasTarefas] = useState([])
+
+    function adicionarTarefa() {
+        // Adiciona uma nova tarefa à lista
+        if (textoInput === '') return // Evita adicionar tarefas vazias
+        setMinhasTarefas([...minhasTarefas, {id: minhasTarefas.length + 1, tarefa: textoInput}]) // pega o valor atual do array e adiciona um novo objeto
+        setTextoInput('') // Limpa o campo de input após adicionar a tarefa
+    }
+
+    function removerTarefa(id) {
+        // Função para remover tarefa (a ser implementada)
+        setMinhasTarefas(minhasTarefas.filter(tarefa => tarefa.id !== id))
+
+    }
 
 
     return (
@@ -25,7 +41,7 @@ export default function Index() {
                     />
 
                     <TouchableHighlight   
-                    onPress={console.log(textoInput)}
+                    onPress={() => adicionarTarefa()}
                     style={estilos.botao}
                     >
                         <Text style={{fontSize: 14, fontWeight: "bold", color: "white"}}>Adicionar</Text>
@@ -38,19 +54,11 @@ export default function Index() {
 
                 <Text style={estilos.textoSubTitulo}>Tarefas</Text>
 
-                <View style={estilos.caixaTarefas}> 
+                <ListaTarefas removerTarefa={removerTarefa} lista={minhasTarefas} />
+            </View>
 
-                    <FlatList
-                    showsVerticalScrollIndicator={false}
-                        data={listaTarefas}
-                        renderItem={({item}) => (
-                            <View style={estilos.tarefa}>
-                                <Text style={{fontSize: 22}}>{item.id}. {item.tarefa}</Text>
-                            </View>
-                        )}
-                        keyExtractor={item => item.id}
-                    />
-                </View>
+            <View style={{alignItems: "flex-start", justifyContent: "flex-start", padding: 5, width: "100%"}}>
+                <Text>App desenvolvido por @luy_choyan</Text>
             </View>
         </View>
     )

@@ -40,12 +40,12 @@ export const estilos = StyleSheet.create({
         flex: 2, 
         justifyContent: "center", 
         alignItems: "center", 
-        flexDirection: "column", 
-        height: "80%", 
+        flexDirection: "column",  
         width: 400,
         backgroundColor: "#e6e6e6ff",
         borderRadius: 15,
         padding: 10,
+        paddingBottom: 0,
         marginTop: -30
     },
     textoSubTitulo:{
@@ -61,12 +61,6 @@ export const estilos = StyleSheet.create({
         flex: 9,
         width: "100%",
         marginTop: -20,
-        padding: 10,
+        padding: 7,
     },
-    tarefa:{
-        marginBottom: 15,
-        backgroundColor: "#F0FFFF",
-        padding: 15,
-        borderRadius: 15,
-    }
 })
