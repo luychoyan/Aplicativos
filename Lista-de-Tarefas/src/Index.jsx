@@ -1,26 +1,13 @@
 import React from "react";
 import { View, Text, TextInput, TouchableHighlight } from "react-native";
 import { estilos } from "./style";
-import Tarefa from "./components/Tarefa";
 import { useState } from "react";
 import { FlatList } from "react-native";
+import { listaTarefas } from "../ListaTarefas";
 
 export default function Index() {
 
-    const [tarefas, setTarefas] = useState([]);
-
-    const [inputText, setInputText] = useState("");
-
-    function adicionarTarefa() {
-        setTarefas({
-            tarefa: inputText,
-            id: tarefas.length + 1
-        })
-        console.log(tarefas);
-        setTarefas("");
-    }
-
-    
+    const [textoInput, setTextoInput] = useState("");
 
 
     return (
@@ -30,13 +17,15 @@ export default function Index() {
 
                 <View style={{flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "100%", backgroundColor: "#F0F8FF", borderRadius: 15,}}>
 
-                    <TextInput value={inputText}  
-                    onChangeText={setInputText}  
+                    <TextInput   
+                    value={textoInput}
+                    onChangeText={setTextoInput}
                     style={estilos.imput} 
                     placeholder="Nova Tarefa..."
                     />
 
-                    <TouchableHighlight onPress={adicionarTarefa}  
+                    <TouchableHighlight   
+                    onPress={console.log(textoInput)}
                     style={estilos.botao}
                     >
                         <Text style={{fontSize: 14, fontWeight: "bold", color: "white"}}>Adicionar</Text>
@@ -50,7 +39,17 @@ export default function Index() {
                 <Text style={estilos.textoSubTitulo}>Tarefas</Text>
 
                 <View style={estilos.caixaTarefas}> 
-                    <Text>{tarefas}</Text>
+
+                    <FlatList
+                    showsVerticalScrollIndicator={false}
+                        data={listaTarefas}
+                        renderItem={({item}) => (
+                            <View style={estilos.tarefa}>
+                                <Text style={{fontSize: 22}}>{item.id}. {item.tarefa}</Text>
+                            </View>
+                        )}
+                        keyExtractor={item => item.id}
+                    />
                 </View>
             </View>
         </View>

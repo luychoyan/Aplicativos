@@ -63,4 +63,10 @@ export const estilos = StyleSheet.create({
         marginTop: -20,
         padding: 10,
     },
+    tarefa:{
+        marginBottom: 15,
+        backgroundColor: "#F0FFFF",
+        padding: 15,
+        borderRadius: 15,
+    }
 })
