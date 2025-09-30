@@ -2,8 +2,6 @@ import React from "react";
 import { View, Text, TextInput, TouchableHighlight } from "react-native";
 import { estilos } from "./style";
 import { useState } from "react";
-import { FlatList } from "react-native";
-import { listaTarefas } from "../ListaTarefas";
 import { ListaTarefas } from "./components/ListaTarefas";
 
 export default function Index() {

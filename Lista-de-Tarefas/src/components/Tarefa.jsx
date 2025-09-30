@@ -18,7 +18,7 @@ export default function Tarefa({id, tarefa, apagarTarefa}) {
             <TouchableOpacity
             onPress={() => apagarTarefa(id)}
             style={estilos.botaoFechar}>
-                <Text style={{fontSize: 22, fontWeight: "bold", color: "#F8F8FF"}}>X</Text>
+                <Text style={{fontSize: 22, fontWeight: "bold", color: "#F8F8FF", justifyContent: "center", alignItems: "center"}}>X</Text>
             </TouchableOpacity>
         </View>
     )
@@ -38,13 +38,11 @@ const estilos = StyleSheet.create({
         flexDirection: "row", 
         justifyContent: "flex-start", 
         width: 295, 
-        //backgroundColor: "green",
         padding: 10,
     },
     texto:{
         fontSize: 22, 
         paddingRight: 5, 
-        //backgroundColor: "yellow"
     },
     botaoFechar:{
         marginLeft: "auto", // empurra o botão para a extremidade direita
@@ -55,7 +53,6 @@ const estilos = StyleSheet.create({
         backgroundColor: "#6959CD",
         borderRadius: 50,
         marginRight: 5,
-        padding: 3,
         marginBottom: "auto",
         marginTop: "auto", // centraliza verticalmente
     }
