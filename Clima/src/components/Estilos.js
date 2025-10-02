@@ -1,7 +1,7 @@
 
 
 import { StyleSheet } from "react-native";
-import cores from "./constants/Cores";
+import cores from "../constants/Cores";
 
 const estilos = StyleSheet.create({
   conteinerInformacao:{

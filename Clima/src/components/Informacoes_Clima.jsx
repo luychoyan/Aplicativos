@@ -2,10 +2,7 @@
 
 import { View, Text, Image } from "react-native";
 import estilos from "./Estilos"
-import cores from "../components/constants/Cores"
-import { EventSubscriptionVendor } from "react-native/Libraries/vendor/emitter/EventEmitter";
-
-
+import cores from "../../src/constants/Cores"
 
 
 function Informacoes_Clima() {
