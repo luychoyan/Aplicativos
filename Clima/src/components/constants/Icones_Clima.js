@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 const ICONES_CLIMA = {
     // Chave (Condição em Português) : Valor (Nome do Ícone Feather)
-    "Ensolarado": <Image style={estilo.imagemIcones} source={require('../../../assets/icons/ceu-limpo2.png')} />,
+    "Ensolarado": <Image style={estilo.imagemIcones} source={require('../../assets/icons/ceu-limpo.png')} />,
 
     "Claro": <Image style={estilo.imagemIcones} source={require('../../../assets/icons/estrelas-da-lua.png')}/>, // Para céu limpo à noite
 
