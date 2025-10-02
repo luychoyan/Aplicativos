@@ -1,10 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import cores from "./src/components/constants/Cores"
+import { Text, TouchableOpacity, View, TextInput, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Informacoes_Clima from './src/components/Informacoes_Clima';
 import estilos from './Estilos';
-import { TextInput } from 'react-native';
+
 
 export default function App() {
   return (
@@ -15,6 +14,7 @@ export default function App() {
           <View style={estilos.conteinerInputBotao}>
             <TextInput style={estilos.input} />
             <TouchableOpacity style={estilos.botao}>
+              <Image style={estilos.icone} source={require("./assets/lupa.png")} />
               <Text style={estilos.textoBotao}>Buscar</Text>
             </TouchableOpacity>
           </View>

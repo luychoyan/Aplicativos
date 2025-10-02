@@ -57,6 +57,9 @@ const estilos = StyleSheet.create({
     color: cores.branco, 
     fontSize: 16, 
     fontWeight: "800",
+  },
+  icone:{
+
   }
 })
 
