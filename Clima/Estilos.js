@@ -41,7 +41,8 @@ const estilos = StyleSheet.create({
     paddingLeft: 10,
     fontSize: 16,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    fontWeight: "500",
   },
   botao:{
     backgroundColor: cores.ciano,
