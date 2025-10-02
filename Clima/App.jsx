@@ -14,7 +14,7 @@ export default function App() {
           <View style={estilos.conteinerInputBotao}>
             <TextInput style={estilos.input} />
             <TouchableOpacity style={estilos.botao}>
-              <Image style={estilos.icone} source={require("./assets/lupa.png")} />
+              <Image style={estilos.icone} source={require("./src/assets/icons/lupa.png")} />
               <Text style={estilos.textoBotao}>Buscar</Text>
             </TouchableOpacity>
           </View>

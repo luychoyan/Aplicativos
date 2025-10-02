@@ -28,7 +28,7 @@ const estilos = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     height: 45,
-    borderRadius: 15,
+    borderRadius: 10,
     width: 370,
     backgroundColor: cores.branco,
     padding: 7,
@@ -36,7 +36,7 @@ const estilos = StyleSheet.create({
   input:{
     width: 250,
     backgroundColor: cores.branco,
-    borderRadius: 15,
+    borderRadius: 10,
     height: 44,
     paddingLeft: 10,
     fontSize: 16,
@@ -47,11 +47,13 @@ const estilos = StyleSheet.create({
     backgroundColor: cores.ciano,
     height: 36,
     width: 100,
-    borderRadius: 13,
+    borderRadius: 10,
     justifyContent: "center",
     alignItems: "center",
     padding: 5,
     marginRight: -3,
+    flexDirection: "row",
+    gap: 7,
   },
   textoBotao:{
     color: cores.branco, 
@@ -59,7 +61,8 @@ const estilos = StyleSheet.create({
     fontWeight: "800",
   },
   icone:{
-
+    width: 24,
+    height: 24,
   }
 })
 
