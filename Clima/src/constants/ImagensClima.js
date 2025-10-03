@@ -1,7 +1,7 @@
 
-
+import React from "react"
 import { Image } from "react-native"
-import { StyleSheet } from "react-native"
+import estilos from "./Estilos"
 
 const ImagensClima = {
   "alerta": <Image style={estilos.imagem} source={require("../assets/icons/alerta.png")}/>,
@@ -13,15 +13,9 @@ const ImagensClima = {
   "estrelasLua": <Image style={estilos.imagem} source={require("../assets/icons/estrelas-da-lua.png")}/>,
   "nuvem": <Image style={estilos.imagem} source={require("../assets/icons/nuvem.png")}/>,
   "nuvensSol": <Image style={estilos.imagem} source={require("../assets/icons/nuvens-sol.png")}/>,
-  "solNuvens": <Image style={estilos.imagem} source={require("../assets/icons/sol-nuvens.png")}/>,
+  "solNuvens": <Image style={estilos.imagem} source={require("../assets/icons/sol-nuvem.png")}/>,
 }
 
 export default ImagensClima
 
-const estilos = StyleSheet.create({
-  imagem:{
-    height: 150,
-    width: 150,
-    resizeMode: "cover",
-  }
-})
+

@@ -39,7 +39,7 @@ const estilos = StyleSheet.create({
     alignItems: "flex-start"
   },
   textoGraus:{
-    color: cores.branco,
+    color: cores.ciano,
     fontSize: 70,
     fontWeight: "700",
   },

@@ -3,9 +3,11 @@
 import { View, Text, Image } from "react-native";
 import estilos from "./Estilos"
 import cores from "../../src/constants/Cores"
+import ImagensClima from "../constants/ImagensClima"
 
 
-function Informacoes_Clima() {
+
+function Informacoes_Clima() { 
   return (
     <View style={estilos.conteinerInformacao}>
       <View style={estilos.caixaTextoCidade}>
@@ -19,9 +21,7 @@ function Informacoes_Clima() {
           <Text style={estilos.textoDescricao}>Chuva Forte</Text>
         </View>
         <View style={estilos.caixaImagem}>
-          <Image 
-          style={estilos.imagem}
-          source={require('../assets/icons/chuva-forte.png')} />
+          {ImagensClima.chuvaForte}
         </View>
       </View>
       <View style={estilos.caixaOutrasInfo}>

@@ -1,7 +1,7 @@
 
 
 import { StyleSheet } from "react-native"
-import cores from "./src/components/constants/Cores"
+import cores from "./src/constants/Cores"
 
 const estilos = StyleSheet.create({
   conteiner: {
