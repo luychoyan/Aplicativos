@@ -1,14 +1,13 @@
 import react from "react";
 import { View, Image } from "react-native";
 import estilos from "./Estilos";
-import ImagensClima from "../constants/ImagensClima";
 
-function Imagem_Clima() {
+
+function Imagem_Clima({dadosAPI}) {
+  const codigoImagem = dadosAPI.weather[0].icon
+  const url_Imagen = `https://openweathermap.org/img/wn/${codigoImagem}@2x.png`
   return (
-    <View style={estilos.imagem}>
-      {ImagensClima.CeuLimpo2}
-    </View>
+    <Image style={estilos.imagem} source={{uri: url_Imagen}}/>
   )
 }
-
 export default Imagem_Clima

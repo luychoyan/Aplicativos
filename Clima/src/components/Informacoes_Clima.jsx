@@ -28,7 +28,7 @@ function Informacoes_Clima({dadosAPI}) {
         <View style={estilos.caixaOutrasInfo}>
           <View style={estilos.caixaInfo}>
             <Image style={estilos.icones} source={require("../assets/icons/vento.png")} />
-            <Text style={estilos.textoVento}>Velocidade do Vento: {dadosAPI.wind.speed} Km/h</Text>
+            <Text style={estilos.textoVento}>Velocidade do Vento: {dadosAPI.wind.speed.toFixed(1)} Km/h</Text>
           </View>
           <View style={estilos.caixaInfo}>
             <Image style={estilos.icones} source={require("../assets/icons/umidade.png")} />

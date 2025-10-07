@@ -59,7 +59,7 @@ const estilos = StyleSheet.create({
     marginBottom: 10,
   },
   imagem:{
-    height: 150,
+    height: "100%",
     width: 150,
     resizeMode: "cover",
   },
