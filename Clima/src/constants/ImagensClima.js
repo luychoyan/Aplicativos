@@ -5,10 +5,10 @@ import estilos from "./Estilos"
 
 const ImagensClima = {
   "alerta": <Image style={estilos.imagem} source={require("../assets/icons/alerta.png")}/>,
-  "ceuLimpo": <Image style={estilos.imagem} source={require("../assets/icons/ceu-limpo.png")}/>,
-  "ceuLimpo2": <Image style={estilos.imagem} source={require("../assets/icons/ceu-limpo2.png")}/>,
-  "chuvaForte": <Image style={estilos.imagem} source={require("../assets/icons/chuva-forte.png")}/>,
-  "chuvaFraca": <Image style={estilos.imagem} source={require("../assets/icons/chuva-fraca.png")}/>,
+  "CeuLimpo": <Image style={estilos.imagem} source={require("../assets/icons/ceu-limpo.png")}/>,
+  "CeuLimpo2": <Image style={estilos.imagem} source={require("../assets/icons/ceu-limpo2.png")}/>,
+  "ChuvaForte": <Image style={estilos.imagem} source={require("../assets/icons/chuva-forte.png")}/>,
+  "ChuvaFraca": <Image style={estilos.imagem} source={require("../assets/icons/chuva-fraca.png")}/>,
   "chuvaMedia": <Image style={estilos.imagem} source={require("../assets/icons/chuva-media.png")}/>,
   "estrelasLua": <Image style={estilos.imagem} source={require("../assets/icons/estrelas-da-lua.png")}/>,
   "nuvem": <Image style={estilos.imagem} source={require("../assets/icons/nuvem.png")}/>,

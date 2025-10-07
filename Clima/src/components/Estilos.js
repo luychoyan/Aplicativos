@@ -13,7 +13,7 @@ const estilos = StyleSheet.create({
     flexDirection: "column"
   },
   caixaTextoCidade:{
-    height: 80,
+    height: 110,
     width: "100%",
     flexDirection: "column",
     alignItems: "flex-start",
@@ -33,14 +33,14 @@ const estilos = StyleSheet.create({
     flexDirection: "row",
   },
   caixaTemperaturaInfo:{
-    width: 170,
+    width: 215,
     justifyContent: "center",
     alignItems: "center",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   textoGraus:{
     color: cores.ciano,
-    fontSize: 70,
+    fontSize: 80,
     fontWeight: "700",
   },
   textoSensacao:{
@@ -50,13 +50,13 @@ const estilos = StyleSheet.create({
   },
   textoDescricao:{
     color: cores.branco,
-    fontSize: 30,
+    fontSize: 26,
     fontWeight: "900",
     marginTop: 10,
   },
   caixaImagem:{
     height: "100%",
-    marginBottom: 80
+    marginBottom: 10,
   },
   imagem:{
     height: 150,
