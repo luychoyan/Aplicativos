@@ -28,14 +28,15 @@ const estilos = StyleSheet.create({
   caixaGrausImagem:{
     flex: 1,
     width: "100%",
-    justifyContent: "space-evenly",
     alignItems: "center",
     flexDirection: "row",
+    justifyContent: "space-around",
+    marginLeft: 20,
   },
   caixaTemperaturaInfo:{
-    width: 215,
-    justifyContent: "center",
-    alignItems: "center",
+    width: 180,
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
     alignItems: "flex-start",
   },
   textoGraus:{
@@ -59,9 +60,10 @@ const estilos = StyleSheet.create({
     marginBottom: 10,
   },
   imagem:{
-    height: "100%",
+    height: 150,
     width: 150,
-    resizeMode: "cover",
+    marginBottom: 100,
+    marginRight: 20,
   },
   caixaOutrasInfo:{
     flex: 1,
@@ -86,7 +88,7 @@ const estilos = StyleSheet.create({
   icones:{
     width: 30,
     height: 30,
-    resizeMode: "cover"
+    resizeMode: "contain"
   },
   textoVento:{
     fontSize: 18,
