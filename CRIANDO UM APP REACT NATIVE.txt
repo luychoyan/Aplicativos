@@ -6,6 +6,8 @@
 
 npx create-expo-app@latest --template - # CRIANDO UM NOVO PROJETO 
 
+npx create-expo-app@latest --template react-navigation/template - # CRIA UM NOVO PROJETO JA COM O REACT NAVIGATION
+
 (escolha o modelo blank para javascript, pois o padrão é typescript)
 
 
