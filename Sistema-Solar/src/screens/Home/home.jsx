@@ -2,7 +2,7 @@
 
 import { View, Text, StyleSheet, Button, FlatList } from "react-native"
 import { useNavigation } from "@react-navigation/native"
-import { PLANETAS_DATA } from "../../data/planetasData"
+import { PLANETAS_DATA } from "../../data/planetData"
 import Item from "../../components/Item"
 import { Cores } from "../../Colors"
 

@@ -2,8 +2,8 @@
 import { StyleSheet, View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import Home from './src/screens/Home/home';
-import PlanetDetails from './src/screens/Detales/planetDetails';
+import Home from './src/screens/home/Home';
+import PlanetDetails from './src/screens/detales/PlanetDetails';
 import { Cores } from './src/Colors';
 
 const Stack = createStackNavigator()
