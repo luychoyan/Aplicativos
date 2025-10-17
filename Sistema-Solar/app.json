@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Cardapio",
-    "slug": "Cardapio",
+    "name": "Planetas",
+    "slug": "sistema-solar-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/sistema-solar-splash.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/sistema-solar-splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1F1F1F"
     },
     "ios": {
       "supportsTablet": true
