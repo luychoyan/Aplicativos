@@ -5,7 +5,7 @@ export default function PlanetDetails({route}) {
   return (
     <View style={styles.container}>
       <View>
-        <Image style={{resizeMode: "cover"}} source={require("../../assets/images/saturno_icon.png")} />
+        <Image style={{resizeMode: "cover"}} source={require("../assets/images/saturno_icon.png")} />
       </View>
       <View>
         <Text>{}</Text>

@@ -2,9 +2,9 @@
 
 import { View, Text, StyleSheet, Button, FlatList } from "react-native"
 import { useNavigation } from "@react-navigation/native"
-import { PLANETAS_DATA } from "../../data/planetData"
-import Item from "../../components/Item"
-import { Cores } from "../../Colors"
+import { PLANETAS_DATA } from "../data/planetData"
+import Item from "../components/Item"
+import { Cores } from "../Colors"
 
 export default function Home() {
   const navigation = useNavigation()

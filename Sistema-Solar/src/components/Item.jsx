@@ -7,13 +7,13 @@ import { useNavigation } from "@react-navigation/native"
 export default function Item({data}) {
   const navigation = useNavigation() // Nescessario para poder ir para outras telas
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("Detalhes do Planeta", {planeta: data.planeta})}>
+    <TouchableOpacity onPress={() => navigation.navigate("Detalhes do Planeta")}>
       <View style={styles.container}>
         <View>
-          <Text style={styles.text}>{}</Text>
+          <Text style={styles.text}>{data.nome}</Text>
         </View>
         <View>
-          <Text style={styles.text}>{}</Text>
+          <Text style={styles.text}>{data.imagem}</Text>
         </View>
       </View>
     </TouchableOpacity>
