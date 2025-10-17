@@ -4,6 +4,7 @@ import { View, Text, StyleSheet, Button, FlatList } from "react-native"
 import { useNavigation } from "@react-navigation/native"
 import { PLANETAS_DATA } from "../../data/planetasData"
 import Item from "../../components/Item"
+import { Cores } from "../../Colors"
 
 export default function Home() {
   const navigation = useNavigation()
@@ -20,6 +21,6 @@ const style = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#EEF0EF"
+    backgroundColor: Cores.preto
   }
 })
