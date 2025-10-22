@@ -11,7 +11,7 @@ npx create-expo-app@latest --template react-navigation/template - # CRIA UM NOVO
 (escolha o modelo blank para javascript, pois o padrão é typescript)
 
 
-npx expo start - # RODANDO A APOICACAO - 
+npx expo start - # RODANDO A APLICACAO - 
 
 # ESCANEI O CODICO QR E ABRA NO CELL OU APERTE A TECLA 'A' E ABRA NO EMULADOR
 
